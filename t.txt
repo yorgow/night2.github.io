@@ -1,0 +1,4 @@
+add to favorite 
+login/sign up pages 
+password encryption 
+events database with creation 

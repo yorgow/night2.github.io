@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #191970;
+    padding: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative; 
+}
+
+.site-title {
+    font-family: 'Arial', sans-serif; 
+    font-size: 3em; 
+    color: #f9f9f9; 
+    text-align: center; 
+    margin: 20px 0; 
+    text-shadow: 2px 2px 4px #000; 
+    flex: 1; 
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.events-header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 20px 0; 
+}
+
+.search-bar-container {
+    margin-left: 20px; 
+}
+
+#search-bar {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; 
+    width: 300px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    position: relative; 
+}
+
+.account-button {
+    display: flex;
+    align-items: center;
+    color: white; 
+    text-decoration: none; 
+    padding: 10px;
+    position: absolute; 
+    right: 20px;
+    top: 20px;
+}
+
+.account-icon {
+    width: 50px; 
+    height: 30px; 
+    margin-right: 5px;
+    display: inline-block; 
+    vertical-align: middle;
+}
+
+
+
+/* Slider Styles */
+#featured-slider {
+    margin: 20px auto;
+    width: 90%;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 300px; 
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease;
+    opacity: 0; 
+}
+
+.slide.active {
+    opacity: 1; 
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.slide-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* Events Grid */
+#events {
+    padding: 20px;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.event-box {
+    border: 1px solid #ccc; 
+    padding: 15px; 
+    margin: 15px; 
+    background-color: #222; 
+    color: #fff; 
+}
+
+.event-box audio {
+    width: 100%; 
+}
+
+.event-image {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+.event-info {
+    margin-top: 10px;
+}
+
+.get-tickets-button {
+    display: inline-block; 
+    background-color: #7209b7;
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-decoration: none; 
+    margin-top: 10px; 
+}
+
+.get-tickets-button:hover {
+    background-color: #b5179e; 
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer-container a:hover {
+    color: #0aff0a; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
